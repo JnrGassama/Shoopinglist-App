@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Shopping List App</title>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />  
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div id="notesPage" data-role="page">
+        <div data-role="header">
+            <h1 style="font-size:20px">Gassama's Shopping List App  <div style="text-align:center" id="icon"><div id="icon"> <img src="img/shoppingcart.png" alt="Shopping cart icon" id="image" height="115" width="153"/></div></h1>
+            <a href="#addNote" data-role="button" data-icon="plus" data-iconpos="notext">Add</a>
+        </div>
+       
+        <div role="main">
+            <ul data-role="listview" id="mainList" data-inset="true">
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed">
+        </div>
+    </div>
+    <div id="addNote" data-role="page" data-dialog="true">
+        <div data-role="header"><h1>New Item</h1></div>
+        <div role="main" class="ui-content">
+
+            <form>
+              <input type="text" name="note" id="newNote">
+              <input type="submit" value="Add">
+          </form>
+      </div>
+  </div>
+</body>
+</html>
